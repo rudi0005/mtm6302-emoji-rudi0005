@@ -1,0 +1,47 @@
+/* Resets default browser padding and margin for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling for font, background color, and padding */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Styles the emoji gallery section to use a grid layout */
+#emoji-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styles for each emoji item in the gallery */
+.emoji-item {
+    text-align: center;
+    font-size: 3rem;
+    background-color:rgb(238, 214, 217);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the emoji on hover */
+.emoji-item:hover {
+    background-color:lightpink;
+    transform: scale(1.1);
+}
+
+/* Styles for the code beneath each emoji */
+.emoji-item code {
+    display: block;
+    margin-top: 10px;
+    font-size: 23px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:rgba(255, 105, 180, 0.626);
+}
